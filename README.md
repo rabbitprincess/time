@@ -1,2 +1,2 @@
 # time
-time utility
+golang time utility
