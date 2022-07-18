@@ -38,7 +38,7 @@ func (t *TimeDiff) GetDiff_micro() int64 {
 	return t.duEnd.Microseconds()
 }
 
-func (t *TimeDiff) GetDiff_ms() int64 {
+func (t *TimeDiff) GetDiff_milli() int64 {
 	return t.duEnd.Milliseconds()
 }
 
