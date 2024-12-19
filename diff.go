@@ -5,6 +5,15 @@ import (
 	"time"
 )
 
+func PrintTimeDiff(name string, fn func()) {
+	td := NewTimeDiff()
+	td.Start()
+	fn()
+	td.End()
+
+	fmt.Printf("%-*s: %s\n", 25, name, td.duEnd.String())
+}
+
 func NewTimeDiff() *TimeDiff {
 	c := &TimeDiff{}
 	return c
